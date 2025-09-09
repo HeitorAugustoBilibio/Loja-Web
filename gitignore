@@ -1,0 +1,57 @@
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.tmp
+hs_err_pid*
+
+# Build directories
+/target/
+/out/
+/build/
+
+# IDEs
+/.classpath
+/.project
+/.settings/
+/.idea/
+/*.iml
+
+# VS Code
+.vscode/
+
+### Gradle ###
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### Maven ###
+.mvn/
+.mvn/wrapper/maven-wrapper.jar
+!/.mvn/wrapper/maven-wrapper.jar
+
+### Angular ###
+# Node
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+/package-lock.json
+/pnpm-lock.yaml
+
+# Angular build
+/dist/
+/tmp/
+/out-tsc/
+
+# Angular cache
+.angular/cache/
+
+# Environment files
+/src/environments/*.ts
+
+### OS files ###
+.DS_Store
+Thumbs.db
