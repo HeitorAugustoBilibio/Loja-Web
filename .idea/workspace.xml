@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f7e5925-fb60-4059-84e3-767ff51efe2f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/angularbasico/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularbasico/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularbasico/src/app/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/angularbasico/src/app/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularbasico/src/app/component/produto-component/produto-component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angularbasico/src/app/component/produto-component/produto-component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularbasico/src/app/component/produto-component/produto-component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularbasico/src/app/component/produto-component/produto-component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularbasico/src/app/services/produto-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularbasico/src/app/services/produto-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtosenai/src/main/java/com/api/produto/produto/controllers/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/produtosenai/src/main/java/com/api/produto/produto/controllers/ProdutoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtosenai/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/produtosenai/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="0f7e5925-fb60-4059-84e3-767ff51efe2f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/angularbasico" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="32RIY8nkABrL1r16cTOHj2X0xHs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,9 +21,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/RepositoryH/Loja Web/produtosenai",
+    "last_opened_file_path": "C:/RepositoryH/LojaWeb-2/produtosenai",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -53,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1757377002714</updated>
       <workItem from="1757377004042" duration="27000" />
+      <workItem from="1757975189406" duration="26000" />
     </task>
     <servers />
   </component>

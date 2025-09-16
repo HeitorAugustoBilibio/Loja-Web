@@ -2,6 +2,7 @@
 
 @if (loading){<div class="alert alert-info">Carregando...</div>}
 @if (erro){<div class="alert alert-danger">erro</div>}
+@if (sucesso){<div class="alert alert-sucess">sucesso</div>}
 
 
 <div class="row g-2 align-items-center mb-3">
@@ -10,24 +11,34 @@
             [(ngModel)]="novoNome"
             placeholder="Nome Do Produto"
         >
+    </div>
+    <div  class="col-sm-6 col-md-4">
         <input class="form-control"
             [(ngModel)]="novaDescricao"
             placeholder="descricao produtos"
         >
-        <input class="form-control"
+    </div>
+    <div  class="col-sm-6 col-md-4">
+        <input class="form-control" type="number"
             [(ngModel)]="novoPreco"
             placeholder="Preco Produto"
         >
     </div>
     <div class="col-auto">
-        <!-- <button class="btn btn-primary" (click)="adicionar()">Adicionar</button> -->
+    <button class="btn btn-primary" (click)="adicionar()">Adicionar</button>
 
     </div>
     <ul class="list-group mb-3">
         @for (p of produtos; track p.id) {
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <span> {{p.nome}} - {{p.descricao}} - {{p.preco.toFixed(2)}}R$</span>
-                <!-- <button class="btn btn-sm btn-outline-danger" (click)="remover(p.id)">Remover</button> -->
+
+                <div class="d-flex align-items-center gap-2">
+                    <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#editModal" (click)="editarItem = p">Editar</button>
+
+                    <button class="btn btn-sm btn-outline-danger" (click)="remover(p.id)">Remover</button>
+                </div>
+
             </li>
         }
     </ul>
@@ -35,4 +46,27 @@
     @if (produtos.length === 0) {
         <div class="alert alert-info">Nenhum Produto cadastrado</div>
     }
+
+    <div class="modal fade" id="editModal" tabindex="1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                @if(editarItem){
+                    <div class="modal-header">
+                        <h4 class="modal-title">Editar Produto</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <input class="form-control mb-2" [(ngModel)]="editarItem.nome" placeholder="Nome">
+                        <input class="form-control mb-2" [(ngModel)]="editarItem.descricao" placeholder="Descricao">
+                        <input class="form-control mb-2" [(ngModel)]="editarItem.preco" type="number" placeholder="Preço">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-primary" (click)="Editar()" data-bs-dismiss="modal">Salvar</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 </div>

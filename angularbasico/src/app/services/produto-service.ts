@@ -17,13 +17,24 @@ export class ProdutoService {
   }
 
 
-  // adicionar(nome: string, descricao: string, preco: number) :  Observable<ProdutoModel>{
-  //   return
-  // }
+  adicionar(produto: ProdutoModel) :  Observable<ProdutoModel>{
+    return this.http.post<ProdutoModel>(`${this.baseUrl}/salvar`, produto)
+    .pipe(catchError(this.handle))
+  }
 
 
-  // remover(id: number): void {
+  remover(id: string): Observable<string> {
+    return this.http.post(`${this.baseUrl}/apagar/${id}`, null,
+     {responseType: 'text'}).pipe(catchError(this.handle))
+  }
 
+  editar(id: string, produto: ProdutoModel): Observable<ProdutoModel>{
+    return this.http.post<ProdutoModel>(`${this.baseUrl}/editar/${id}`, produto)
+    .pipe(catchError(this.handle));
+  }
+
+  // delete(id: string){
+  //   return this.delete(`${this.baseUrl}/apagar/${id}`, {id})
   // }
 
   private handle(err: HttpErrorResponse){
